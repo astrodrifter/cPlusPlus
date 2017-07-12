@@ -10,6 +10,7 @@ int main(int argc, char **argv)
     int length;
     printf("Enter length for Pascal's Triangle\n");
     scanf("%i",&length);
+    length++;
     
     /* set elements to zero */
     int rows[length][length];
