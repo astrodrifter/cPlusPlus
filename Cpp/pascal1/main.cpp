@@ -27,13 +27,13 @@ int main(int argc, char **argv)
         /* set blank space */
         int count = countDown; 
         while(count > 0){
-            printf(" ");
+            printf("   ");
             count--;
         }
         for(int j = 0; j < length; j++){
             rows[i+1][j] = rows[i][j-1]+rows[i][j];
             if(rows[i][j] != 0) {
-                printf("%i ",rows[i][j]);
+                printf("%i    ",rows[i][j]);
             }
         }
         countDown--;

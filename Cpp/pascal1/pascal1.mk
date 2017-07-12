@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=pascal1
 ConfigurationName      :=Debug
-WorkspacePath          :=/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/Cpp
-ProjectPath            :=/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/Cpp/pascal1
+WorkspacePath          :=/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp
+ProjectPath            :=/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/Cpp/pascal1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
