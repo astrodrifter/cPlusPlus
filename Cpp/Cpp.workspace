@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Cpp" Database="" Version="10.0.0">
   <Project Name="helloWorld" Path="helloWorld/helloWorld.project" Active="No"/>
-  <Project Name="pascal1" Path="pascal1/pascal1.project" Active="Yes"/>
+  <Project Name="pascal1" Path="pascal1/pascal1.project" Active="No"/>
+  <Project Name="Q3" Path="Q3/Q3.project" Active="No"/>
+  <Project Name="Q3type" Path="../../../../../dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/Q3type/Q3type.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="helloWorld" ConfigName="Debug"/>
       <Project Name="pascal1" ConfigName="Debug"/>
+      <Project Name="Q3" ConfigName="Debug"/>
+      <Project Name="Q3type" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="helloWorld" ConfigName="Release"/>
       <Project Name="pascal1" ConfigName="Release"/>
+      <Project Name="Q3" ConfigName="Release"/>
+      <Project Name="Q3type" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

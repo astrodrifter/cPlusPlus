@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     /* complete algorithym */
     int countDown = length-2; //to set spaces for triangle
 	for(int i = 0; i < length; i++) {
-    rows[i][0] = 1; // set first number of each row to 1
+        rows[i][0] = 1; // set first number of each row to 1
     
         /* set blank space */
         int count = countDown; 

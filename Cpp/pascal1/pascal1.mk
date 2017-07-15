@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=pascal1
 ConfigurationName      :=Debug
-WorkspacePath          :=/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp
-ProjectPath            :=/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1
+WorkspacePath          :=/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp
+ProjectPath            :=/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Dhruva O'Shea
-Date                   :=12/07/2017
+Date                   :=14/07/2017
 CodeLitePath           :="/Users/dovetales/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/Dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/pascal1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
