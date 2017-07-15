@@ -3,7 +3,8 @@
   <Project Name="helloWorld" Path="helloWorld/helloWorld.project" Active="No"/>
   <Project Name="pascal1" Path="pascal1/pascal1.project" Active="No"/>
   <Project Name="Q3" Path="Q3/Q3.project" Active="No"/>
-  <Project Name="Q3type" Path="../../../../../dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/Q3type/Q3type.project" Active="Yes"/>
+  <Project Name="Q3type" Path="../../../../../dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/Q3type/Q3type.project" Active="No"/>
+  <Project Name="sum" Path="sum/sum.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -11,6 +12,7 @@
       <Project Name="pascal1" ConfigName="Debug"/>
       <Project Name="Q3" ConfigName="Debug"/>
       <Project Name="Q3type" ConfigName="Debug"/>
+      <Project Name="sum" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -18,6 +20,7 @@
       <Project Name="pascal1" ConfigName="Release"/>
       <Project Name="Q3" ConfigName="Release"/>
       <Project Name="Q3type" ConfigName="Release"/>
+      <Project Name="sum" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
