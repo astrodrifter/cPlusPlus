@@ -1,5 +1,10 @@
-#include <stdio.h>
+#include <cstdio>
+#include <string>
 #include <iostream>
+#include <math.h>
+
+static int getLength(char * str);
+static int getArr1Len(char * str);
 
 int main(int argc, char **argv)
 {
@@ -25,11 +30,38 @@ int main(int argc, char **argv)
         sum += value;
     std::cout << "The sum = " << sum << std::endl;*/
     
+    /*
     std:: cout << "Enter your number to be summed with spaces and 'q' to finish:\n";
     int sum = 0, value = 0;
     // read until end-of-file, calculating a running total of all values read
-    while (std::cin >> value)
+    while (std::cin >> value) {
         sum += value; // equivalent to sum = sum + value 
-        std::cout << "Sum is: " << sum << std::endl; 
+    std::cout << "Sum is: " << sum << std::endl; 
+     */
+     
+    std:: cout << "Enter you string with 'q' to finish:\n";
+    int sum = 0, length = 0, arr1Len = 0, arr2Len = 0; arr1[10], arr2[10];
+    char myString[50];
+    std::cin >> myString;
+    length = getLength(myString); // get length of string
+    arr1Len = getArr1Len(myString);
+    arr2Len = getArr2Len(myString, arr1Len);
+
+    
+    std::cout << length << std::endl;
+    
 	return 0;
+}
+/* get length */
+static int getLength(char * str){
+    int i = 0, length = 0;
+    while(str[i] != '\0'){
+        length++;
+        i++;
+    }
+    return length;
+}
+/* get array 1 length */
+static int getArr1Len(char * str) {
+    
 }

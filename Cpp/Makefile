@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ sum - Debug ]----------"
-	@cd "sum" && "$(MAKE)" -f  "sum.mk"
+	@echo "----------Building project:[ Q3new - Debug ]----------"
+	@cd "Q3new" && "$(MAKE)" -f  "Q3new.mk"
 clean:
-	@echo "----------Cleaning project:[ sum - Debug ]----------"
-	@cd "sum" && "$(MAKE)" -f  "sum.mk" clean
+	@echo "----------Cleaning project:[ Q3new - Debug ]----------"
+	@cd "Q3new" && "$(MAKE)" -f  "Q3new.mk" clean
