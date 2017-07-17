@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     length = getLength(myString); // get length of string
     arr1Len = getArr1Len(myString); // get length for array 1
     arr2Len = getArr2Len(myString, arr1Len); // get length for array 2
-    //op = findOperator(myString, length);
+    op = findOperator(myString, length);
 
     /* enter ints into arrays */
     int arr1[arr1Len], arr2[arr2Len];
