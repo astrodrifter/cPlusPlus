@@ -27,7 +27,7 @@ int main(int argc, char **argv)
     int arr1[arr1Len], arr2[arr2Len];
     fillArray1(myString, arr1, arr1Len);
     
-    
+    /* output fchecks or my own learning */
     std::cout << "String length = " << length << "\narray 1 length = "
     << arr1Len << "\narray 2 length = " << arr2Len << "\n operator is " 
     << myString[op] << " at location " << op << std::endl;

@@ -2,10 +2,11 @@
 <CodeLite_Workspace Name="Cpp" Database="" Version="10.0.0">
   <Project Name="helloWorld" Path="helloWorld/helloWorld.project" Active="No"/>
   <Project Name="pascal1" Path="pascal1/pascal1.project" Active="No"/>
-  <Project Name="Q3" Path="Q3/Q3.project" Active="No"/>
+  <Project Name="Q3" Path="Q3/Q3.project" Active="Yes"/>
   <Project Name="Q3type" Path="../../../../../dovetales/DocumentsLocal/1801ICTprogrammingLanguages/cPlusPlus/Cpp/Q3type/Q3type.project" Active="No"/>
   <Project Name="sum" Path="sum/sum.project" Active="No"/>
-  <Project Name="Q3new" Path="Q3new/Q3new.project" Active="Yes"/>
+  <Project Name="Q3new" Path="Q3new/Q3new.project" Active="No"/>
+  <Project Name="Q3professor" Path="Q3professor/Q3professor.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -15,6 +16,7 @@
       <Project Name="Q3type" ConfigName="Debug"/>
       <Project Name="sum" ConfigName="Debug"/>
       <Project Name="Q3new" ConfigName="Debug"/>
+      <Project Name="Q3professor" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -24,6 +26,7 @@
       <Project Name="Q3type" ConfigName="Release"/>
       <Project Name="sum" ConfigName="Release"/>
       <Project Name="Q3new" ConfigName="Release"/>
+      <Project Name="Q3professor" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

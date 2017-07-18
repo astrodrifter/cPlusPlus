@@ -3,16 +3,25 @@
 #include <iostream>
 #include <math.h>
 
-class printf;
+using namespace std;
+
+static void solve(char myString);
+
 int main(int argc, char **argv)
 {
     /* get string */
-    std::string myString;
-	printf("Enter something:\n");
-    std:: cin >> myString;
-    printf("You entered:\n");
-    std:: cout << myString << std::endl;
+    string myString;
+	cout << "Enter something:\n"; 
+    cin >> myString;
+    cout << "You entered:\n";
+    cout << myString << std::endl;
     
+    solve(myString);
+    
+	return 0;
+}
+/* solve - algorithym here */
+static void solve(char myString){
     /* get length of string */
     int length = myString.length();
 
@@ -80,10 +89,8 @@ int main(int argc, char **argv)
         countDown--;
     }
     printf("Number2 = %i\n",number2);
-    
-	return 0;
+    return;
 }
-
 
 // 3*100 + 2*10 + 1*1
 // 3*10^location
