@@ -5,9 +5,9 @@
 
 using namespace std;
 
-static void solve(char myString);
+void solve(char * myString);
 
-int main(int argc, char **argv)
+int main(void)
 {
     /* get string */
     string myString;
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	return 0;
 }
 /* solve - algorithym here */
-static void solve(char myString){
+static void solve(char * myString){
     /* get length of string */
     int length = myString.length();
 
@@ -89,7 +89,6 @@ static void solve(char myString){
         countDown--;
     }
     printf("Number2 = %i\n",number2);
-    return;
 }
 
 // 3*100 + 2*10 + 1*1
