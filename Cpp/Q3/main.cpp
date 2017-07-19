@@ -11,17 +11,17 @@ void printArray(int arr[],int size){
     }
     cout << "\n";
 }
-void fillArray(int arr[], int myArray1[], int arrCount, int size, int call){
-    if(call){
-        int i = 0;
-        for(int j = size+1; j < arrCount;j++){
-            arr[i] = myArray1[j];
-            i++;
-        }
-    } else {
-        for(int i = 0; i < size; i++){
-            arr[i] = myArray1[i];
-        }
+void fillArray1(int arr[], int myArray1[], int size){
+    for(int i = 0; i < size; i++){
+        arr[i] = myArray1[i];
+    }
+}
+void fillArray2(int arr[], int myArray1[], int myArray1Size, int size){
+    int count = 0;
+    for(int j = size+2; j < myArray1Size+2;j++){
+        arr[count] = 1;
+        /*arr[count] = myArray1[j];*/
+        count++;
     }
 }
 char findOp(int arr[], int size){
@@ -80,8 +80,8 @@ void solve(string myString){
     int size1 = location, size2 = arrCount-location;
     int num1[size1];
     int num2[size2];
-    fillArray(num1,myArray1,size1,arrCount,0);
-    fillArray(num2,myArray1,size2,arrCount,1);
+    fillArray1(num1,myArray1,size1);
+    fillArray2(num2,myArray1,size2,arrCount);
     printArray(num1,size1);
     printArray(num2,size2);
     
