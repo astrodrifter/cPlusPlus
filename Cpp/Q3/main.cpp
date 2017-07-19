@@ -5,7 +5,87 @@
 
 using namespace std;
 
-void solve(char * myString);
+void printArray(int arr[],int size){
+    for(int i = 0; i < size; i++){
+        cout << arr[i];
+    }
+    cout << "\n";
+}
+void fillArray(int arr[], int myArray1[], int arrCount, int size, int call){
+    if(call){
+        int i = 0;
+        for(int j = size+1; j < arrCount;j++){
+            arr[i] = myArray1[j];
+            i++;
+        }
+    } else {
+        for(int i = 0; i < size; i++){
+            arr[i] = myArray1[i];
+        }
+    }
+}
+char findOp(int arr[], int size){
+    int op;
+    for(int i = 0; i < size; i++){
+        if(arr[i] < 0) {
+            op = arr[i] + 48;
+        }
+    }
+    return op;
+}
+int findOpLocation(int arr[], int size){
+    int location = 0;
+    for(int i = 0; i < size; i++){
+        if(arr[i] < 0) {
+            location = i;
+        }
+    }
+    return location;
+}
+
+/*int calculate(int num[], int length){
+    int result = 0, i= 0;
+    while (length > 0){
+        result += num[i]*pow(10,length);
+    }
+    cout << "Result = " << result;
+    // 3*100 + 2*10 + 1*1
+    // 3*10^length
+    return result;
+}*/
+void solve(string myString){
+    /* get length of string */
+    int length = myString.length();
+
+    /* make array of ints with operator included */
+    int myArray1[length];
+    int arrCount = 0;
+    for(int i = 0; i < length; i++){
+        if(myString[i] > 41 && myString[i] < 58){
+            myArray1[arrCount] = myString[i]-48;
+            arrCount++; //size of array
+        }
+    }
+    
+    /* find operator */
+    char op;
+    op = findOp(myArray1, arrCount);
+    cout << "op = " << op << "\n";;
+    int location;
+    location = findOpLocation(myArray1, arrCount);
+    cout << "location of op = " << location << "\n";
+    
+    
+    /* sperate num */
+    int size1 = location, size2 = arrCount-location;
+    int num1[size1];
+    int num2[size2];
+    fillArray(num1,myArray1,size1,arrCount,0);
+    fillArray(num2,myArray1,size2,arrCount,1);
+    printArray(num1,size1);
+    printArray(num2,size2);
+    
+}
 
 int main(void)
 {
@@ -14,82 +94,9 @@ int main(void)
 	cout << "Enter something:\n"; 
     cin >> myString;
     cout << "You entered:\n";
-    cout << myString << std::endl;
+    cout << myString << endl;
     
     solve(myString);
     
 	return 0;
 }
-/* solve - algorithym here */
-static void solve(char * myString){
-    /* get length of string */
-    int length = myString.length();
-
-    /* make array of ints */
-    int myArray1[length];
-    int arrCount = 0;
-    for(int i = 0; i < length; i++){
-        if(myString[i] > 41 && myString[i] < 58){
-            myArray1[arrCount] = myString[i]-48;
-            arrCount++;
-        }
-    }
-    
-    /* find operator */
-    char op;
-    int location;
-    for(int i = 0; i < arrCount; i++){
-        if(myArray1[i] < 0) {
-            op = myArray1[i] + 48;
-            location = i;
-        }
-    }
-    
-    /* sperate num */
-    int num1[location];
-    int num2[arrCount-location];
-    for(int i = 0; i < location; i++){
-        num1[i] = myArray1[i];
-    }
-    int count = 0;
-    for(int j = location+1; j < arrCount;j++){
-        num2[count] = myArray1[j];
-        count++;
-    }
-    
-    /* print num1 */
-    printf("First number:\n");
-    for(int k = 0; k < location; k++){
-       printf("%i",num1[k]);
-    }
-    printf("\n");
-    printf("operator is %c\n",op);
-    
-    /* print num2 */
-    printf("Second number:\n");
-    for(int k = 0; k < location; k++){
-       printf("%i",num2[k]);
-    }
-    printf("\n");
-    
-    /* make number from int array elements */
-    int number1 = 0;
-    int countDown = location-1;
-    for(int i = 0; i < location; i++){
-        number1 += (num1[i]*pow(10,countDown));
-        countDown--;
-    }
-    printf("Number1 = %i\n",number1);
-    
-    int number2 = 0;
-    countDown = arrCount-location-1;
-    printf("arrCount = %i, location =%i\n",arrCount,location);
-    for(int i = 0; i < location; i++){
-        number2 += (num2[i]*pow(10,countDown));
-        countDown--;
-    }
-    printf("Number2 = %i\n",number2);
-}
-
-// 3*100 + 2*10 + 1*1
-// 3*10^location
