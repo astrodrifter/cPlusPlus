@@ -18,9 +18,8 @@ void fillArray1(int arr[], int myArray1[], int size){
 }
 void fillArray2(int arr[], int myArray1[], int myArray1Size, int size){
     int count = 0;
-    for(int j = size+2; j < myArray1Size+2;j++){
-        arr[count] = 1;
-        /*arr[count] = myArray1[j];*/
+    for(int j = myArray1Size+1; j < size;j++){
+        arr[count] = myArray1[j];
         count++;
     }
 }
@@ -43,16 +42,15 @@ int findOpLocation(int arr[], int size){
     return location;
 }
 
-/*int calculate(int num[], int length){
-    int result = 0, i= 0;
+int calculate(int arr[], int length){
+    int sum = 0, i= 0;
     while (length > 0){
-        result += num[i]*pow(10,length);
+        sum += arr[i]*pow(10,length-1);
+        i++;
+        length--;
     }
-    cout << "Result = " << result;
-    // 3*100 + 2*10 + 1*1
-    // 3*10^length
-    return result;
-}*/
+    return sum;
+}
 void solve(string myString){
     /* get length of string */
     int length = myString.length();
@@ -67,24 +65,43 @@ void solve(string myString){
         }
     }
     
-    /* find operator */
+    /* find operator and location of operator */
     char op;
     op = findOp(myArray1, arrCount);
-    cout << "op = " << op << "\n";;
+    cout << "operator is " << op << "\n";;
     int location;
     location = findOpLocation(myArray1, arrCount);
-    cout << "location of op = " << location << "\n";
     
-    
-    /* sperate num */
+    /* sperate numbers from myArray1 into num1[] and num2[] */
     int size1 = location, size2 = arrCount-location;
     int num1[size1];
     int num2[size2];
     fillArray1(num1,myArray1,size1);
     fillArray2(num2,myArray1,size2,arrCount);
-    printArray(num1,size1);
-    printArray(num2,size2);
+    //printArray(num1,size1);
+    //printArray(num2,size2-1);
     
+    /*calculate array into numbers */
+    int number1 = 0, number2 = 0, solution = 0;
+    number1 = calculate(num1,size1);
+    number2 = calculate(num2,size2-1);
+    cout << "Number 1 = " << number1;
+    cout << "\nNumber 2 = " << number2;
+    switch (op){
+        case '/': 
+            solution = number1/number2;
+            break;
+        case '+':
+            solution = number1+number2;
+            break;
+        case '-':
+            solution = number1-number2;
+            break;
+        case '*':
+            solution = number1*number2;
+            break;
+    }
+    cout << "\nSolution: " << number1 << op << number2 << " = " << solution << "\n" << endl;
 }
 
 int main(void)
@@ -93,9 +110,6 @@ int main(void)
     string myString;
 	cout << "Enter something:\n"; 
     cin >> myString;
-    cout << "You entered:\n";
-    cout << myString << endl;
-    
     solve(myString);
     
 	return 0;

@@ -7,7 +7,8 @@
   <Project Name="sum" Path="sum/sum.project" Active="No"/>
   <Project Name="Q3new" Path="Q3new/Q3new.project" Active="No"/>
   <Project Name="Q3professor" Path="Q3professor/Q3professor.project" Active="No"/>
-  <Project Name="temp" Path="temp/temp.project"/>
+  <Project Name="temp" Path="temp/temp.project" Active="No"/>
+  <Project Name="snipet" Path="snipet/snipet.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -19,6 +20,7 @@
       <Project Name="Q3new" ConfigName="Debug"/>
       <Project Name="Q3professor" ConfigName="Debug"/>
       <Project Name="temp" ConfigName="Debug"/>
+      <Project Name="snipet" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -30,6 +32,7 @@
       <Project Name="Q3new" ConfigName="Release"/>
       <Project Name="Q3professor" ConfigName="Release"/>
       <Project Name="temp" ConfigName="Release"/>
+      <Project Name="snipet" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
