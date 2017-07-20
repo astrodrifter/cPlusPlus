@@ -1,3 +1,14 @@
+/* Program takes a string input with hideen numbers and an operator
+ * turns ints into two seperate numbers and performs the operation.
+ *  
+ *    3v4b5/4n5
+ *    operator is /
+ *    Number 1 = 345
+ *    Number 2 = 45
+ *    Solution: 345/45 = 7
+ * 
+ *  Dhruva O'Shea
+ * */
 #include <cstdio>
 #include <string>
 #include <iostream>
