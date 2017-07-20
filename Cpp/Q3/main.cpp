@@ -93,14 +93,17 @@ void solve(string myString){
     //printArray(num2,size2-1);
     
     /*calculate array into numbers */
-    int number1 = 0, number2 = 0, solution = 0;
+    int number1 = 0, number2 = 0;
+    float solution;
     number1 = calculate(num1,size1);
     number2 = calculate(num2,size2-1);
     cout << "Number 1 = " << number1;
     cout << "\nNumber 2 = " << number2;
     switch (op){
         case '/': 
-            solution = number1/number2;
+            number1 = number1+0.0;
+            number2 = number2+0.0;
+            solution = (float)number1/number2;
             break;
         case '+':
             solution = number1+number2;
