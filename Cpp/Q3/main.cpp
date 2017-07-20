@@ -5,7 +5,7 @@
  *    operator is /
  *    Number 1 = 345
  *    Number 2 = 45
- *    Solution: 345/45 = 7
+ *    Solution: 345/45 = 7.6
  * 
  *  Dhruva O'Shea
  * */
