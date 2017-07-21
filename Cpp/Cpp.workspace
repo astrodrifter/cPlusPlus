@@ -9,7 +9,8 @@
   <Project Name="Q3professor" Path="Q3professor/Q3professor.project" Active="No"/>
   <Project Name="temp" Path="temp/temp.project" Active="No"/>
   <Project Name="snipet" Path="snipet/snipet.project" Active="No"/>
-  <Project Name="replaceString" Path="replaceString/replaceString.project" Active="Yes"/>
+  <Project Name="replaceString" Path="replaceString/replaceString.project" Active="No"/>
+  <Project Name="stringCompare" Path="stringCompare/stringCompare.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -23,6 +24,7 @@
       <Project Name="temp" ConfigName="Debug"/>
       <Project Name="snipet" ConfigName="Debug"/>
       <Project Name="replaceString" ConfigName="Debug"/>
+      <Project Name="stringCompare" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -36,6 +38,7 @@
       <Project Name="temp" ConfigName="Release"/>
       <Project Name="snipet" ConfigName="Release"/>
       <Project Name="replaceString" ConfigName="Release"/>
+      <Project Name="stringCompare" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
