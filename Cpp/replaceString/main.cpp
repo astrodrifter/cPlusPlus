@@ -15,9 +15,10 @@ void replace(string string1, string string2, string string3){
     //find string2 in string 1 and replace with string3
     
     // find string2 in string1
-    int i = 0, j = 0, position = 0;
+    int i = 0, j = 0, position = 0, found = 0;
     while(string1[i] != '\0'){
-        if(sameString(string1,string2,i)){
+        found = findString(string1,string2,i);
+        if(found){
             position = i;
             cout << "found at " << i << "\n";
         }
@@ -26,17 +27,22 @@ void replace(string string1, string string2, string string3){
     
 }
 
-int sameString(string str1, string str2, int index){
-    int len1, len2, j = 0;
+int findString(string str1, string str2, int index){
+    int len1, len2, j = 0, found = 0;
     string temp;
     len1 = str1.length();
     len2 = str2.length();
     for(int i = index; i < len2; i++){
-        temp[j] = 
-        
+        temp[j] = str1[i];
+        j++;
     }
-    return 1;
+    
+    //compare string
+    found = compareString(str2, temp);
+    return found;
 }
+
+int 
 
 int main(int argc, char **argv)
 {

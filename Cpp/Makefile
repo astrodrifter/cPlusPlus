@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ stringCompare - Debug ]----------"
-	@cd "stringCompare" && "$(MAKE)" -f  "stringCompare.mk"
+	@echo "----------Building project:[ replaceString - Debug ]----------"
+	@cd "replaceString" && "$(MAKE)" -f  "replaceString.mk"
 clean:
-	@echo "----------Cleaning project:[ stringCompare - Debug ]----------"
-	@cd "stringCompare" && "$(MAKE)" -f  "stringCompare.mk" clean
+	@echo "----------Cleaning project:[ replaceString - Debug ]----------"
+	@cd "replaceString" && "$(MAKE)" -f  "replaceString.mk" clean
