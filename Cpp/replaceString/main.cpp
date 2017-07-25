@@ -4,10 +4,29 @@
 
 using namespace std;
 
+int findString(string str1, string str2, int index){
+    int len2, j = 0,count = 0;
+    string temp;
+    len2 = str2.length();
+    for(int i = index; i < len2+index; i++){
+        if(str1[i] == str2[j])
+            count++;
+        j++;
+    }
+    if(count-1 == len2){
+        return 1;
+    }else {
+        return  0;
+    }
+    return 0;
+}
+
 void replace(string string1, string string2, string string3){
     string newString;
     
-    // string lensths
+    cout << string1 << string2;
+    
+    // string lengths
     int len2, len3;
     len2 = string2.length();
     len3 = string3.length();
@@ -15,34 +34,19 @@ void replace(string string1, string string2, string string3){
     //find string2 in string 1 and replace with string3
     
     // find string2 in string1
-    int i = 0, j = 0, position = 0, found = 0;
+    int i = 0, position = 0, found = 0;
     while(string1[i] != '\0'){
-        found = findString(string1,string2,i);
-        if(found){
+        //found = findString(string1,string2,i);
+        if(string1[i] == string2[0]){
             position = i;
             cout << "found at " << i << "\n";
-        }
+        } 
     }
-    
     
 }
 
-int findString(string str1, string str2, int index){
-    int len1, len2, j = 0, found = 0;
-    string temp;
-    len1 = str1.length();
-    len2 = str2.length();
-    for(int i = index; i < len2; i++){
-        temp[j] = str1[i];
-        j++;
-    }
-    
-    //compare string
-    found = compareString(str2, temp);
-    return found;
-}
 
-int 
+
 
 int main(int argc, char **argv)
 {
@@ -51,7 +55,7 @@ int main(int argc, char **argv)
     getline (std::cin, string1);
     cout << "Enter string to be replaced\n";
     getline (std::cin, string2);
-    cout << "Enter string to replaced\n";
+    cout << "Enter string to replace\n";
     getline (std::cin, string3);
 	replace(string1, string2, string3);
 	return 0;
