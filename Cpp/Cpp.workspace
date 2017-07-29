@@ -12,7 +12,8 @@
   <Project Name="replaceString" Path="replaceString/replaceString.project" Active="No"/>
   <Project Name="stringCompare" Path="stringCompare/stringCompare.project" Active="No"/>
   <Project Name="replaceString3" Path="replaceString3/replaceString3.project" Active="No"/>
-  <Project Name="insertString" Path="insertString/insertString.project" Active="Yes"/>
+  <Project Name="insertString" Path="insertString/insertString.project" Active="No"/>
+  <Project Name="findString" Path="findString/findString.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -29,6 +30,7 @@
       <Project Name="stringCompare" ConfigName="Debug"/>
       <Project Name="replaceString3" ConfigName="Debug"/>
       <Project Name="insertString" ConfigName="Debug"/>
+      <Project Name="findString" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -45,6 +47,7 @@
       <Project Name="stringCompare" ConfigName="Release"/>
       <Project Name="replaceString3" ConfigName="Release"/>
       <Project Name="insertString" ConfigName="Release"/>
+      <Project Name="findString" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

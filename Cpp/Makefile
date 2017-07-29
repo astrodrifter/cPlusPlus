@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ insertString - Debug ]----------"
-	@cd "insertString" && "$(MAKE)" -f  "insertString.mk"
+	@echo "----------Building project:[ findString - Debug ]----------"
+	@cd "findString" && "$(MAKE)" -f  "findString.mk"
 clean:
-	@echo "----------Cleaning project:[ insertString - Debug ]----------"
-	@cd "insertString" && "$(MAKE)" -f  "insertString.mk" clean
+	@echo "----------Cleaning project:[ findString - Debug ]----------"
+	@cd "findString" && "$(MAKE)" -f  "findString.mk" clean

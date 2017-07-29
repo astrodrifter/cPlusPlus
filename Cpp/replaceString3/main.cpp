@@ -3,6 +3,7 @@
 #include <string>
 
 using namespace std;
+
 int checkRest(string str, string str2, int index){
     int j = 0;
     string newString;
